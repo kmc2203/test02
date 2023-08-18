@@ -21,10 +21,10 @@ public class Board {
     private String content;
 
     @CreationTimestamp
-    @Column(name = "regDt", updatable = false)
-    private LocalDateTime regDt;
+    @Column(name = "regDt", updatable = false) // 등록 시간은 불변
+    private LocalDateTime regDt; // 등록 시간
 
     @UpdateTimestamp
     @Column(name = "modDt")
-    private LocalDateTime modDt;
+    private LocalDateTime modDt; // 수정 시간
 }
